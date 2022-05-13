@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script> -->
+    <title>Objects In JavaScript</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Objects In JavaScript</header>
+      <a class="nav-link" href="#What_is_Object">What is Object</a>
+      <a class="nav-link" href="#Bracket_and_Dot_notation">Bracket and Dot Notation</a>
+      <a class="nav-link" href="#Array_in_Object">Array in Object</a>
+      <a class="nav-link" href="#Object_in_Object">Object in Object</a>
+      <a class="nav-link" href="#Function_in_Object">Function in Object</a>
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Object">
+        <header>What is Object</header>
+        <p>
+          Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+        </p>
+        <ul>
+          <li>
+             Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+          </li>
+          <li>
+            An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+          </li>
+          <li>
+            Loosely speaking, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+          </li>
+        </ul>
+        <p class="bold">How to make a Object:</p>
+        <code>
+          const profile = {<br>
+            firstName: 'Aman',<br>
+            age: 22,<br>
+            email: 'aman.0002@icloud.com'<br>
+          };
+        </code>
+      </section>
+
+      <section class="main-section" id="Bracket_and_Dot_notation">
+        <header>Bracket and Dot Notation</header>
+        <p class="bold">Dot Notation</p>
+        <ul>
+          <li>Property identifies can only be alphanumeric (and _ and $)</li>
+          <li>Property identifiers cannot start with a number.</li>
+          <li>Property identifiers cannot contain variables.</li>
+        </ul>
+        <code>profile.lastName = 'Chahal';</code>
+        <p class="bold">Bracket Notation</p>
+        <ul>
+          <li>Property identifiers have to be a String or a variable that references a String</li>
+          <li>It is okay to use variables, spaces, and Strings that start with numbers</li>
+        </ul>
+        <code>profile['occupation'] = 'student';</code>
+      </section>
+
+      <section class="main-section" id="Array_in_Object">
+        <header>Array in Object</header>
+        <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.</p>
+        <p class="bold">How to make Array in an Object:</p>
+        <code>profile.dayMonthYear = [28, 11, 2021];</code>
+      </section>
+
+      <section class="main-section" id="Object_in_Object">
+        <header>Object in Object</header>
+        <p>Much like array's, We can also make Objects inside our Object's.</p>
+        <p class="bold">How to make Object in an Object:</p>
+        <code>
+          profile["time"] = {<br>
+            hour: 10,<br>
+            minutes: 30,<br>
+            amOrPM: "am",<br>
+          };
+        </code>
+      </section>
+      
+      <section class="main-section" id="Function_in_Object">
+        <header>Function in Object</header>
+        <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
+        <p class="bold">How to make Function in an Object:</p>
+        <code>
+          profile.birthYear = function () {<br>
+            return this.dayMonthYear[2] - this.age;<br>
+          };
+        </code>
+      </section>
+
+      <footer>
+        <p><p>
+        This Page was made for programming learning purposes by
+        <a href="https://twitter.com/chahal_0002" target="_blank"
+          >Aman Chahal</a
+        >
+        , check more about JavaScript Objects on <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects">MDN</a>.
+      </p></p>
+      </footer>
+    </main>
+  </body>
+</html>

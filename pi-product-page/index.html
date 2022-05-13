@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" id="scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Raspberry Pi Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <img
+          id="header-img"
+          src="img/pi-logo.png"
+          alt="A logo of Raspberry Pi Foundation"
+        />
+        <h1>Pi User</h1>
+      </div>
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#scroll">HOME</a>
+        <a class="nav-link" href="#about">ABOUT US</a>
+        <a class="nav-link" href="#pi">BUY NOW</a>
+        <!-- <a href="#footer">END</a> -->
+      </nav>
+    </header>
+
+    <main>
+      <section class="form">
+        <div class="form-border">
+          <h2>Connect With Us</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter Your Email"
+              />
+            </label>
+            <input type="submit" name="submit" id="submit" value="Contact Me" />
+          </form>
+        </div>
+      </section>
+
+      <section class="video">
+        <iframe
+          width="560"
+          height="315"
+          id="video"
+          src="https://www.youtube.com/embed/ZSvHJ97d8n8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="about">
+        <div class="about-grid">
+          <ion-icon name="book-outline"></ion-icon>
+          <div>
+            <h2>Great For Learning</h2>
+            <p>
+              Whether it is learning Programming, Electronics or Linux Raspberry
+              PI is going to be your best friend through-out your learning
+              journey.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <ion-icon name="cash-outline"></ion-icon>
+          <div>
+            <h2>Economical</h2>
+            <p>
+              Raspberry PI is the cheapest full-fledged computer of good quality
+              one can find in the market, everyone's use case for technology is
+              different but everyone loves a product that give you bank for your
+              buck.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <ion-icon name="globe-outline"></ion-icon>
+          <div>
+            <h2>Huge Community</h2>
+            <p>
+              Raspberry PI has a welcoming and friendly global community where
+              user's share their latest pi projects that can be anything from
+              making their own personal Cloud storage with pi to building a
+              supercomputer with cluster of pi's.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pi">
+        <div class="product">
+          <div class="tile">
+            <h2>Pi Model 4B</h2>
+            <img
+              height="225"
+              width="350"
+              src="img/pi-4.jpeg"
+              alt="A photo of Pi model 4"
+            />
+            <h3>For:</h3>
+            <ul>
+              <li>Those that are pro user's</li>
+              <li>Those that already know their use-case</li>
+              <li>Those that need a computer to build projects</li>
+            </ul>
+
+            <form
+              target="_blank"
+              action="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/"
+            >
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Learn More"
+              />
+            </form>
+          </div>
+
+          <div class="tile">
+            <h2>Pi Model 400</h2>
+            <img
+              height="225"
+              width="350"
+              src="img/pi-400.jpeg"
+              alt="A photo of Pi model 400"
+            />
+            <h3>For:</h3>
+            <ul>
+              <li>Those already owning a PI</li>
+              <li>Those familiar with Linux OS</li>
+              <li>Those that already own needed accessories</li>
+            </ul>
+            <form
+              target="_blank"
+              action="https://www.raspberrypi.com/products/raspberry-pi-400-unit/"
+            >
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Learn More"
+              />
+            </form>
+          </div>
+
+          <div class="tile product-grid-3">
+            <h2>Pi Model 400 with Kit</h2>
+            <img
+              height="225"
+              width="350"
+              src="img/pi-400kit.jpeg"
+              alt="A photo of Pi moded 400 with full kit"
+            />
+            <h3>For:</h3>
+            <ul>
+              <li>Those buying PI for first time</li>
+              <li>Those unfamiliar with Linux OS</li>
+              <li>Those lacking sd-card and needed accessories</li>
+            </ul>
+            <form
+              target="_blank"
+              action="https://www.raspberrypi.com/products/raspberry-pi-400/"
+            >
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Learn More"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>
+        This Page was made for programming learning purposes by
+        <a href="https://twitter.com/chahal_0002" target="_blank"
+          >Aman Chahal</a
+        >
+        , I have no affiliations whatsoever with Raspberry Pi Foundation and
+        bear no responsibility regarding any product shown on the webpage .
+      </p>
+    </footer>
+  </body>
+</html>

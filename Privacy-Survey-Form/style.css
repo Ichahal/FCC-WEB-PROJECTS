@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e7f5ff;
+}
+
+/* heading */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+#description {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* form */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: rgba(165, 216, 255, 0.555);
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+  /* gap: 2rem; */
+}
+
+span {
+  font-size: 1.4rem;
+}
+
+div p {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  font-size: 2rem;
+  margin: 1rem 4rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 4rem;
+  padding: 0.2rem 0.5rem;
+  background-clip: padding-box;
+  color: #777;
+  background-color: #d0ebff;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.input-textarea {
+  min-height: 160px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  background-color: #d0ebff;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2.2rem;
+  background: #e7f5ff;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+a:visited,
+a:link,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #777;
+}

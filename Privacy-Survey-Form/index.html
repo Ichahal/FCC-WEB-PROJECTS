@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form Regarding Data Collection Through Internet.</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Regarding Data Collection By Tech Companies</h1>
+      <p id="description">
+        This form survey's people's comfort level with tech companies collecting
+        data from their users.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">First Name</label>
+          <input
+            type="text"
+            id="name"
+            name="fname"
+            placeholder="Enter Your First Name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="last-name-label" for="last-name">Last Name</label>
+          <input
+            type="text"
+            name="lname"
+            id="last-name"
+            placeholder="Enter Your Last Name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email ID"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age <span>(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="125"
+            placeholder="Enter Your Age"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>How would you describe your current role ?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value="">Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="part-time">Part Time Student / Job</option>
+            <option value="retired">Retired</option>
+            <option value="other">Other</option>
+            <option value="prefer-not-to-tell">Prefer Not To Say</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How frequently do you use Social Media ?</p>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="social-m-use"
+              value="daily"
+              checked
+            />
+            Daily
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="social-m-use"
+              value="occasionally"
+            />
+            Occasionally
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="social-m-use"
+              value="rarely"
+            />
+            Rarely
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            On scale of 1 to 5, How comfortable are you with tech companies
+            collecting your data ?
+          </p>
+          <select name="scale" class="form-control" required>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Do you think tech companies are transparent about what data they
+            collect and how they use it ?
+          </p>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="transparency"
+              value="no"
+              checked
+            />
+            No
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="transparency"
+              value="yes"
+            />
+            Yes
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Do you agree with statement
+            <em
+              >"I don't mind my data being collected, as I have nothing i wish
+              to hide"</em
+            >
+            ?
+          </p>
+
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="nothing-to-hide"
+              value="no"
+              checked
+            />
+            No
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="nothing-to-hide"
+              value="yes"
+            />
+            Yes
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What concerns you in particular about companies using your data for
+            ? <span>(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="concern"
+              value="selling"
+            />
+            Outright Selling Your Data
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="concern"
+              value="share-govt"
+            />
+            Sharing With Governments
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="concern"
+              value="share-adv"
+            />
+            Sharing With Advertisers
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="concern"
+              value="product-addiction"
+            />
+            Making Their Product More Addictive
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="concern"
+              value="other"
+            />
+            Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            class="input-textarea"
+            id="comments"
+            placeholder="Enter Your Comments Here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-button" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        This Page was made for programming learning purposes by
+        <a href="https://twitter.com/chahal_0002" target="_blank"
+          >Aman Chahal</a
+        >
+        , I bear no responsibility whatsoever regarding any data entered on this
+        survey form .
+      </p>
+    </footer>
+  </body>
+</html>
